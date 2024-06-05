@@ -1,0 +1,427 @@
+* {
+	margin: 0;
+	border: 0;
+    padding: 0;
+    
+}
+
+#contenedor {
+	width: 95%;
+	margin: auto;
+}
+
+body{
+    background-color: whitesmoke;
+    background-image: url("../imágenes/fondo.png");
+}
+/* ========================header ========================*/
+
+header.alinear1{
+    display: flex;
+    justify-content: space-between;
+    vertical-align: bottom;
+	
+	
+}
+
+header .alinear2{
+	display: flex;
+    justify-content: space-between;
+    vertical-align: bottom;
+	margin-left: 20px;
+    margin-top: 5px;
+	float: right;
+
+}
+header  .alinear3{
+	display: flex;
+    justify-content: space-between;
+    vertical-align: bottom;
+    margin-top: 5px;
+	float: right;
+	}
+/* ========================== nav ======================== */
+
+ul li{
+    list-style: none;
+}
+ul li a {
+    text-decoration: none;
+
+}
+nav {
+	background-color: #007cc4;
+    font-family: Arial, Helvetica, sans-serif;
+	max-width: 100%;
+    padding: 10px 0;
+    margin: 0;
+    align-items: center;
+    min-height: 10px;
+    z-index: 1000;
+	
+}
+nav a {
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    margin: 2px;
+}
+nav a:hover{
+    background-color:  #007cc4;
+}
+nav ul{
+    list-style: none;
+    padding: 0 10px;
+
+}
+
+nav ul li{
+    display: inline-block;
+    position: relative;
+    transition: .3s linear;
+    z-index: 1000;
+}
+
+
+nav ul li a{
+    color: azure;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 12px 20px;
+    transition: .3s linear;
+
+}
+
+nav ul li a:hover{
+    color: rgb(202, 189, 0);
+    
+}
+
+nav ul li:hover .sub-categoria{
+    display: block;
+
+}
+
+nav .submenu .sub-categoria{
+    display: none;
+    background:  #007cc4;
+    position: absolute;
+    width: 100%;
+}
+
+nav .submenu .sub-categoria li{
+    display: block;
+    overflow: hidden;
+    border-bottom: none;    
+}
+
+nav .submenu .sub-categoria li a{
+    display: block;
+}
+
+
+
+
+/*============================Btn Buscar===================*/
+.buscar{
+	position: relative;
+    padding: 5px;
+    margin-right: 10%;
+	margin-top: 5px;
+    float: right;
+	
+
+}
+
+input{
+    width: 240px;
+    height: 40px;
+    padding: 0 10px;
+    font-size: 18px;
+    color: black;
+    outline: auto;
+    border-radius: 30px;
+    border: 1px solid silver;
+    
+}
+/*==================== Banner=====================*/
+h2{
+	font-size: 40px;
+	font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    
+}
+
+.banner{
+    width: 325px;
+    margin: 0;
+    padding: 0;
+    float: left;
+    
+}
+
+section {
+	margin: auto;
+	width: 80%;
+	padding: 3px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: rgba(245, 245, 245, 0.473);
+    
+}
+section figure {
+	width: 20%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #582f0e;
+}
+section figure img {
+	width: 80%;
+	margin: 10px auto;
+	display: block;
+}
+section figure figcaption{
+	margin: 10px;
+	text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+.boton-item{
+    display: block;
+    margin: 10px 0;
+    border: none;
+    background: black;
+    color: aliceblue;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+main{
+    flex-direction: 3;
+    margin: auto;
+}
+
+.transicion:hover{
+    box-shadow: 0 0 25px #000000;
+    scale: 1.05;
+    transition: .3s;
+}
+
+/*=============Carrito de compras=================*/
+.carrito{
+    border: 1px solid #666;
+    width: 35%;
+    padding: 10px;
+    margin-top: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: auto;
+    position: sticky !important;
+    top: 0;
+    transition: .3s;
+
+}
+
+.carrito .header-carrito{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.carrito .carrito-item{
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-bottom: 1px solid black;
+    padding: 20px;
+}
+
+.carrito .carrito-item img{
+    margin-right: 20px;
+
+}
+
+.carrito .carrito-item .carrito-item-titulo{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.carrito .carrito-item .selector-cantidad{
+    display: inline-block;
+    margin-right: 25px;
+    
+}
+
+.carrito .carrito-item .carrito-item-cantidad{
+    border: none;
+    font-size: 18px;
+    background: transparent;
+    display: inline-block;
+    width: 30px;
+    padding: 5px;
+    text-align: center;
+}
+
+.carrito .carrito-item .selector-cantidad i{
+    font-size: 18px;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid black;
+    cursor: pointer;
+
+}
+
+.carrito .carrito-item .carrito-item-precio{
+    font-weight: bold;
+    display: inline-block;
+    font-size: 18px;
+    margin-bottom: 5px;
+
+}
+
+.carrito .carrito-item .btn-eliminar{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    color: black;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid black;
+    cursor: pointer;
+    display: block;
+    background: transparent;
+    z-index: 20;
+
+}
+
+.carrito .carrito-item .btn-eliminar i{
+    pointer-events: none;
+}
+
+.carrito-total{
+    background-color: #f3f3f3;
+    padding: 30px;
+}
+
+.carrito-total .fila{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.carrito-total .btn-pagar{
+    display: block;
+    width: 100%;
+    border: none;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.carrito-total .btn-pagar:hover{
+    scale: 1.05;
+}
+
+/*=============Footer=================*/
+
+footer{
+    width: 100%;
+    padding: 40px 0;
+    background-color: #007cc4;
+    background-size: cover;
+    margin-top: 20px;
+}
+
+.contenedor-footer{
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1500px;
+    margin: auto;
+    margin-top: 5px;
+    padding: auto;
+}
+
+.box-footer{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0;
+
+}
+
+.box-footer .logo{
+    width: 300px;
+}
+
+.box-footer .terminos{
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: aliceblue;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.box-footer h2{
+    margin-bottom: 20px;
+    color: aliceblue;
+    font-weight: 600;
+}
+
+.box-footer a{
+    margin-top: 10px;
+    color: aliceblue;
+    font-weight: 600;
+
+}
+
+.box-footer a:hover{
+    color: rgb(202, 189, 0);;
+}
+
+.box-footer a .fab{
+    font-size: 20px;
+}
+
+.box-copyright{
+    max-width: 1500px;
+    margin: auto;
+    text-align: center;
+    padding: 0 40px;
+}
+
+.box-copyright p{
+    margin-top: 20px;
+    color: aliceblue;
+}
+.box-copyright hr{
+    border: none;
+    height: 1px;
+    background-color: aliceblue;
+}
